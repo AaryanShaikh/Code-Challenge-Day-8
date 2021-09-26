@@ -12,7 +12,7 @@
 
 // Write the function to find the calculateTip obtained.
 function calculateTip(amount, rating) {
-    //your code here
-  }
+  return (rating.toLowerCase() == "terrible") ? Math.round(amount / 100 * 0) : (rating.toLowerCase() == "poor") ? Math.round(amount / 100 * 5) : (rating.toLowerCase() == "good") ? Math.round(amount / 100 * 10) : (rating.toLowerCase() == "great") ? Math.round(amount / 100 * 15) : (rating.toLowerCase() == "excellent") ? Math.round(amount / 100 * 20) : "Rating not recognised";
+}
 
 //Use SpecRunner to check the Test Cases.
